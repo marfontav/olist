@@ -20,6 +20,4 @@ for i in files_names:
     table_name = 'tb_' + i.strip('.csv').replace('olist_', '').replace('_dataset', '')
     print(table_name)
     df_tmp.to_sql(table_name, connection, if_exists='replace', index=False)
-    #
-    # df_tmp.to_sql(table_name, str_connection)
-    # print(df_tmp.head())
+    
