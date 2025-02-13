@@ -1,4 +1,4 @@
--- SQLite -- Delimitando a base ativa e o tempo de historico - granularidade
+-- SQLite -- Agregando por vendedor - Qtd Produtos, Qtd_pedidos e Receita
 SELECT T2.seller_id,
 SUM( T2.price ) AS receita_total,
 COUNT(DISTINCT T1.order_id) AS qtd_pedidos,
